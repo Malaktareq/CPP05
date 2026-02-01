@@ -14,7 +14,6 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-	rm -f *.shrubbery
 
 re: fclean all
 

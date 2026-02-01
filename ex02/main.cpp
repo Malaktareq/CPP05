@@ -6,6 +6,7 @@
 
 int main()
 {
+    srand(time(NULL));
     std::cout << "====== BUREAUCRATS ======\n";
     Bureaucrat boss("Boss", 1);
     Bureaucrat worker("Worker", 140);

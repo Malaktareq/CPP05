@@ -2,7 +2,6 @@
 
 RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", 72, 45), _target("default")
 {
-
 }
 RobotomyRequestForm::RobotomyRequestForm(const std::string& target) : AForm("RobotomyRequestForm", 72, 45), _target(target)
 {
@@ -33,9 +32,9 @@ void RobotomyRequestForm::execute(Bureaucrat const &executor) const
 {
     AForm::execute(executor);
     std::cout << "Bzzzzzzzz... ";
-    static int attempt = 0;
-    attempt++;
-    if (attempt % 2 == 1)
+    
+    int value = rand() % 2;
+    if (value == 1)
         std::cout << _target << " has been robotomized successfully." << std::endl;
     else
         std::cout << "The robotomy failed on " << _target << "." << std::endl;

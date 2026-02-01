@@ -4,6 +4,7 @@
 #include "AForm.hpp"
 #include "Bureaucrat.hpp"
 #include <fstream>
+#include <cstdlib>
 class RobotomyRequestForm : public AForm
 {
     private:
@@ -15,7 +16,6 @@ class RobotomyRequestForm : public AForm
         RobotomyRequestForm& operator=(const RobotomyRequestForm& other);
         ~RobotomyRequestForm();
         void execute(Bureaucrat const & executor) const;
-        std::string const getName() const;
 };
 
 #endif

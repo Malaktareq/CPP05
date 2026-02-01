@@ -7,6 +7,7 @@
 
 int main()
 {
+    srand(time(NULL));
     std::cout << "====== BUREAUCRATS ======\n";
     Bureaucrat boss("Boss", 1);
     Bureaucrat worker("Worker", 50);
@@ -22,7 +23,7 @@ int main()
     AForm* form1 = someIntern.makeForm("shrubbery creation", "home");
     AForm* form2 = someIntern.makeForm("robotomy request", "Bender");
     AForm* form3 = someIntern.makeForm("presidential pardon", "Marvin");
-    AForm* form4 = someIntern.makeForm("unknown form", "Test"); // should fail
+    AForm* form4 = someIntern.makeForm("unknown form", "Test"); 
 
     std::cout << "\n====== SIGN AND EXECUTE FORMS ======\n";
 

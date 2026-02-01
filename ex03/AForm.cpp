@@ -37,7 +37,7 @@ AForm::~AForm()
 void AForm::beSigned(Bureaucrat& bureaucrat)
 {
     if (bureaucrat.getGrade() > _signGrade)
-        throw AForm::GradeTooHighException();
+        throw AForm::GradeTooLowException();
     _isSigned = 1;
 }
 

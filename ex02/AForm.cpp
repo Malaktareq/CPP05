@@ -87,6 +87,6 @@ void AForm::execute(Bureaucrat const &executor) const
     }
     if (executor.getGrade() > this->getExecuteGrade())
     {
-        throw AForm::GradeTooHighException();
+        throw AForm::GradeTooLowException();
     }
 }
